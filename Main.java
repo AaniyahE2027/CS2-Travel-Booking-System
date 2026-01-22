@@ -1,6 +1,7 @@
 public class Main {
 
    public static void main(String []args) {
-      System.out.println("Hello World");
+      ItalyTrip t1 = new ItalyTrip("Cilento Coast", 50 , true, false, true);
+      System.out.println(t1);
    }
 }
