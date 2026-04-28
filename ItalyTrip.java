@@ -53,12 +53,45 @@ public double getTotalCost(){
 }
 
 //setters
-public void setCoastType (String new c){
-    this.coastType = new c;
+public void setCoastType (String c){
+    this.coastType = c;
 }
 
-public void setIfNeedPaymentPlan (boolean new i){
-    this.
+public void setIfNeedPaymentPlan (boolean p){
+    this.ifNeedPaymentPlan = p;
+}
+
+public void setDurationOfTrip (int dt){
+    this.durationOfTrip = dt;
+}
+
+public void setIsLuxury ( boolean l){
+    this.isLuxury = l;
+}
+
+public void setIsOutdoorsy (boolean o){
+    this.isOutdoorsy = o;
+}
+
+public void setIsExploratory (boolean e){
+    this.isExploratory = e;
+}
+
+public String toString() {
+  String itinerary = "-----------------------------------------\n" +
+                     "       ✨ Italy Trip ✨        \n" +
+                     "-----------------------------------------\n" +
+                     "Coast Type:    " + coastType + "\n" +
+                     "Do You Need A Payment Plan: (true/false)   " + ifNeedPaymentPlan + "\n" +
+                     "STAY DURATION: " + durationOfTrip + " Nights\n" +
+                     "Do you want luxury (true/false):" + isLuxury + " \n" +
+                     "Do you want Outdoorsy (true/false):" + isOutdoorsy + " \n" +
+                     "Do you want Exploratory (true/false):" + isExploratory + " \n" +
+                     "-----------------------------------------\n" +
+                     "TOTAL COST:  $" + totalCost + ".00\n" +
+                     "-----------------------------------------\n" +
+                     "  Thank you for booking with Wanderlust! \n";
+  return itinerary;  
 }
 
 
